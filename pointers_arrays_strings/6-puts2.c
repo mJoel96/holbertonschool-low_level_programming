@@ -1,19 +1,17 @@
+#include "holberton.h"
 /**
- * puts2 - function should print only one character out of two
- * starting with the first one
- * @str: input
- * Return: print
+ * puts2 - Prints out every other char of the string.
+ * @str: input string to print.
  */
 void puts2(char *str)
 {
-	int n = 0;
+	int i;
 
-	for (; str[n] != '\0'; n++)
+	while (str[i] != '\0')
 	{
-		if ((n % 2) == 0)
-			_putchar(str[n]);
-		else
-			continue;
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
